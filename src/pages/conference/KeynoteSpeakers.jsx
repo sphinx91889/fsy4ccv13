@@ -23,7 +23,6 @@ export default function KeynoteSpeakers() {
           className="absolute inset-0 w-full h-full object-cover"
           src="https://videos.pexels.com/video-files/855507/855507-hd_1920_1080_25fps.mp4"
         />
-        <div className="absolute inset-0 bg-black/60" /> {/* Dark overlay for readability */}
       </div>
       <div className="relative z-10 max-w-4xl mx-auto px-4 py-12">
         <motion.h1 
