@@ -26,7 +26,7 @@ export default function KeynoteSpeakers() {
       </div>
       <div className="relative z-10 max-w-4xl mx-auto px-4 py-12">
         <motion.h1 
-          className="text-4xl md:text-5xl font-bold text-center mb-12 text-green-700 flex items-center justify-center gap-3"
+          className="text-4xl md:text-5xl font-bold text-center mb-12 text-white flex items-center justify-center gap-3"
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
