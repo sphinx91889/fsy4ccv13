@@ -177,7 +177,7 @@ export default function KeynoteSpeakers() {
           />
           <div>
             <h2 className="text-2xl md:text-3xl font-bold mb-2 text-gray-900">Bro. Sam Pounds</h2>
-            <p className="text-lg text-gray-700 mb-1">Hilltop Church of Christ (Winter Haven, FL)</p>
+            <p className="text-lg text-gray-700 mb-1">Minister, Hilltop Church of Christ (Winter Haven, FL)</p>
           </div>
         </motion.div>
 
