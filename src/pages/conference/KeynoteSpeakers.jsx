@@ -227,6 +227,53 @@ export default function KeynoteSpeakers() {
             <p>He is married to the former Lisa Lynette Harrell of Miami, Florida and they have three children: Jalyssa Janee, Samuell Jamaal and Jerusala Jalyn.</p>
           </div>
         </motion.div>
+
+        {/* Bro. Marcus Tarver */}
+        <motion.div 
+          className="flex flex-col md:flex-row items-center gap-8 mb-12 p-8 rounded-2xl shadow-lg backdrop-blur-md bg-white/30 border border-white/50 hover:bg-white/40 transition-all duration-300"
+          initial={{ opacity: 0, x: -20 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.6 }}
+        >
+          <img 
+            src="https://hilltopcofc.org/images/logo.png" 
+            alt="Hilltop Church of Christ Logo" 
+            className="w-32 h-32 object-contain rounded-xl border border-white/50 shadow-md bg-white/80 backdrop-blur-sm"
+          />
+          <div>
+            <h2 className="text-2xl md:text-3xl font-bold mb-2 text-gray-900">Bro. Marcus Tarver</h2>
+            <p className="text-lg text-gray-700 mb-1">Youth Minister, Hilltop Church of Christ (Winter Haven, FL)</p>
+          </div>
+        </motion.div>
+
+        {/* Gallery - Marcus Tarver */}
+        <div className="mb-12">
+          <h3 className="text-xl font-semibold mb-4 text-center text-blue-700">Gallery</h3>
+          <motion.div 
+            className="flex gap-6 justify-center items-center overflow-x-auto pb-2"
+            initial="hidden"
+            animate="visible"
+            variants={{
+              hidden: {},
+              visible: { transition: { staggerChildren: 0.2 } }
+            }}
+          >
+            {/* No gallery image for now */}
+          </motion.div>
+        </div>
+
+        {/* Bio - Marcus Tarver */}
+        <motion.div 
+          className="prose max-w-none mx-auto rounded-xl p-8 shadow mb-16 backdrop-blur-md bg-white/30 border border-white/50 hover:bg-white/40 transition-all duration-300"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+        >
+          <h3 className="text-2xl font-bold mb-2 text-green-800">About Bro. Marcus Tarver</h3>
+          <div className="text-gray-800">
+            <p>Marcus was born in 1997 in Winter Haven Florida to Marvin and Sharon Tarver. He graduated from both Polk State Collegiate with his high school diploma and from Polk state College with an AA Degree in Liberal Arts in 2015. He then enlisted in the United States Air Force where he served 6 years as a medic. He now works as an Environmental Scientist at the Environmental Protection Commission of Hillsborough County in Tampa FL. Marcus has been married to Samaya Tarver since July 17th of 2021 and has two baby girls, Myelle and Mia. Over the years, Marcus has dedicated his time to learning how to defend the faith and how to teach other Christians how to do so. As the new Youth Minister for Hilltop, he strives to teach and mentor the next generation of faithful Christians so they will be equipped in an ever-changing world.</p>
+          </div>
+        </motion.div>
       </div>
     </div>
   )
