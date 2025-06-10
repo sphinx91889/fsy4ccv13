@@ -19,6 +19,7 @@ import Rules from './pages/conference/Rules'
 import TeamForms from './pages/conference/TeamForms'
 import SeniorRecognition from './pages/conference/SeniorRecognition'
 import Sponsorship from './pages/conference/Sponsorship'
+import KeynoteSpeakers from './pages/conference/KeynoteSpeakers'
 
 // Competition Pages
 import BibleBowl from './pages/competitions/BibleBowl'
@@ -49,6 +50,7 @@ export default function App() {
           <Route path="/conference/team-forms" element={<TeamForms />} />
           <Route path="/conference/senior-recognition" element={<SeniorRecognition />} />
           <Route path="/conference/sponsorship" element={<Sponsorship />} />
+          <Route path="/conference/keynote-speakers" element={<KeynoteSpeakers />} />
 
           {/* Competition Routes */}
           <Route path="/conference/competitions" element={<Competitions />} />

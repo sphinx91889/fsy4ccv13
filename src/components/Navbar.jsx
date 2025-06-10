@@ -15,6 +15,7 @@ export default function Navbar() {
     { title: 'Team Forms', path: '/conference/team-forms' },
     { title: 'Senior/Graduate Recognition Program', path: '/conference/senior-recognition' },
     { title: 'Sponsorship & Support', path: '/conference/sponsorship' },
+    { title: 'Keynote Speakers', path: '/conference/keynote-speakers' },
   ]
 
   const handleLinkClick = () => {
