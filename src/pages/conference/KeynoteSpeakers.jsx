@@ -350,6 +350,69 @@ export default function KeynoteSpeakers() {
             <p>Reflecting on her mission, Britney shares: "I don't wish to simply be seen or heard, but pray that my impact is felt."</p>
           </div>
         </motion.div>
+
+        {/* Bro. Jairus Adams */}
+        <motion.div 
+          className="flex flex-col md:flex-row items-center gap-8 mb-12 p-8 rounded-2xl shadow-lg backdrop-blur-md bg-white/30 border border-white/50 hover:bg-white/40 transition-all duration-300"
+          initial={{ opacity: 0, x: -20 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.6 }}
+        >
+          <img 
+            src="https://sscoc.org/images/logo.png" 
+            alt="Southside Church of Christ Logo" 
+            className="w-32 h-32 object-contain rounded-xl border border-white/50 shadow-md bg-white/80 backdrop-blur-sm"
+          />
+          <div>
+            <h2 className="text-2xl md:text-3xl font-bold mb-2 text-gray-900">Bro. Jairus Adams</h2>
+            <p className="text-lg text-gray-700 mb-1">Southside Church of Christ (Orlando, FL)</p>
+          </div>
+        </motion.div>
+
+        {/* Gallery - Jairus Adams */}
+        <div className="mb-12">
+          <h3 className="text-xl font-semibold mb-4 text-center text-blue-700">Gallery</h3>
+          <motion.div 
+            className="flex gap-6 justify-center items-center overflow-x-auto pb-2"
+            initial="hidden"
+            animate="visible"
+            variants={{
+              hidden: {},
+              visible: { transition: { staggerChildren: 0.2 } }
+            }}
+          >
+            <motion.div
+              className="relative group"
+              whileHover={{ scale: 1.05, rotate: 2 }}
+              initial={{ opacity: 0, y: 40 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.7 }}
+            >
+              <img
+                src="https://storage.googleapis.com/msgsndr/8ngdMjJjmckUW3DffAfv/media/684b08bc080b4d6a436fdbfd.png"
+                alt="Keynote Gallery Jairus Adams"
+                className="w-64 h-80 object-cover rounded-2xl shadow-lg border border-white/50 backdrop-blur-sm bg-white/20"
+              />
+              <div className="absolute inset-0 rounded-2xl bg-black/0 group-hover:bg-black/10 transition-all duration-300" />
+            </motion.div>
+          </motion.div>
+        </div>
+
+        {/* Bio - Jairus Adams */}
+        <motion.div 
+          className="prose max-w-none mx-auto rounded-xl p-8 shadow mb-16 backdrop-blur-md bg-white/30 border border-white/50 hover:bg-white/40 transition-all duration-300"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+        >
+          <h3 className="text-2xl font-bold mb-2 text-green-800">About Bro. Jairus Adams</h3>
+          <div className="text-gray-800">
+            <p>Born and raised in Orlando, Florida by way of Windermere, Jairus Adams is a dedicated husband, father, and servant-leader in his community. He and his wife, Felicia Adams, have been married for over a decade and are proud parents of four children.</p>
+            <p>Jairus is an active member of the Southside Church of Christ in Orlando, where he serves as the Director of the Health and Wellness Ministry. The ministry comprises approximately 15 professionals, including doctors, pharmacists, nurses, and mental health counselors, working together to support the physical and emotional well-being of the congregation.</p>
+            <p>Professionally, Jairus is the owner and operator of a freight and logistics company specializing in intermodal import and export operations throughout Florida. In addition to managing his business, he is currently pursuing a degree in Legal Studies at the University of Central Florida (UCF).</p>
+            <p>Deeply committed to youth and community engagement, Jairus and his family are involved in various church activities, including the Lads to Leaders program, praise team, maintenance team, and the youth conference planning committee. During their downtime, the Adams family enjoys spending time together on the water.</p>
+          </div>
+        </motion.div>
       </div>
     </div>
   )
